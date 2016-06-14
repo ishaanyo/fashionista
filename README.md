@@ -1,0 +1,2 @@
+# fashionista
+django web app
