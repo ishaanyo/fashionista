@@ -1,0 +1,16 @@
+{% extends 'cool/base.html' %}
+{% block title %}My Page{% endblock %}
+
+{% block body %}
+    {% load staticfiles %}
+    <div class="row text-center" style="margin: 0 auto;">
+
+    <div class="col-md-5"  style="margin: 15px;border: 1px solid cornflowerblue;height: 500px;">
+        <a href="#" class="btn btn-success">Voting Time</a>
+        <img src="{% static 'cool/image/vote11.jpg' %}">
+    </div>
+    <div class="col-md-5"  style="margin: 15px;border: 1px solid cornflowerblue;height: 500px;">
+        <a href="{% url 'cool:register' %}" class="btn btn-success">Create profile for Competetion</a>
+    </div>
+    </div>
+{% endblock %}
